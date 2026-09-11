@@ -1,9 +1,12 @@
-import { BookOpen, Package, PlayCircle, Brain, TrendingUp, CheckCircle, AlertTriangle, Users } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { BookOpen, Package, PlayCircle, Brain, TrendingUp, CheckCircle, AlertTriangle, Users, Download } from 'lucide-react';
 import type { Store } from '../store';
 
 interface Props { store: Store; }
 
 export default function Dashboard({ store }: Props) {
+  const navigate = useNavigate();
+  
   const stats = [
     { label: 'Total Courses', value: store.courses.length, icon: BookOpen, color: 'bg-blue-500', change: '+2 this week' },
     { label: 'SCORM Exports', value: store.exports.length, icon: Package, color: 'bg-purple-500', change: '+5 this week' },
@@ -26,9 +29,18 @@ export default function Dashboard({ store }: Props) {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div>
-        <h1 className="text-2xl font-bold text-gray-900">Dashboard</h1>
-        <p className="text-gray-500 text-sm mt-1">Welcome back, {store.currentUser?.fullName}. Here's your platform overview.</p>
+      <div className="flex items-center justify-between">
+        <div>
+          <h1 className="text-2xl font-bold text-gray-900">Dashboard</h1>
+          <p className="text-gray-500 text-sm mt-1">Welcome back, {store.currentUser?.fullName}. Here's your platform overview.</p>
+        </div>
+        <button 
+          onClick={() => navigate('/download')}
+          className="px-5 py-2.5 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg text-sm font-bold hover:opacity-90 transition-opacity inline-flex items-center gap-2 shadow-lg"
+        >
+          <Download className="w-4 h-4" />
+          Download App ZIP
+        </button>
       </div>
 
       {/* Stats Grid */}
@@ -192,12 +204,13 @@ export default function Dashboard({ store }: Props) {
           <button className="px-4 py-2 bg-white/20 hover:bg-white/30 rounded-lg text-sm font-medium transition-colors backdrop-blur-sm">
             🧪 Test in Mock LMS
           </button>
-          <a 
-            href="#/download" 
-            className="px-4 py-2 bg-white/20 hover:bg-white/30 rounded-lg text-sm font-medium transition-colors backdrop-blur-sm inline-flex items-center gap-2"
+          <button 
+            onClick={() => navigate('/download')}
+            className="px-4 py-2 bg-white text-blue-600 hover:bg-gray-100 rounded-lg text-sm font-bold transition-colors inline-flex items-center gap-2 shadow-lg"
           >
-            💾 Download App ZIP
-          </a>
+            <Download className="w-4 h-4" />
+            Download App ZIP
+          </button>
         </div>
       </div>
     </div>

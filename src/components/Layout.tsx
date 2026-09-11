@@ -18,6 +18,7 @@ const navItems = [
   { path: '/mock-lms', icon: PlayCircle, label: 'Mock LMS' },
   { path: '/ai', icon: Brain, label: 'AI Assistant' },
   { path: '/admin', icon: Settings, label: 'Administration' },
+  { path: '/download', icon: Package, label: 'Download App' },
 ];
 
 export default function Layout({ children, store }: LayoutProps) {
