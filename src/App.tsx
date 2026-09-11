@@ -10,6 +10,7 @@ import ScormEngine from './pages/ScormEngine';
 import MockLMS from './pages/MockLMS';
 import AIAssistant from './pages/AIAssistant';
 import Admin from './pages/Admin';
+import DownloadApp from './pages/DownloadApp';
 
 function App() {
   const store = useStore();
@@ -30,6 +31,7 @@ function App() {
           <Route path="/mock-lms" element={<MockLMS store={store} />} />
           <Route path="/ai" element={<AIAssistant store={store} />} />
           <Route path="/admin" element={<Admin store={store} />} />
+          <Route path="/download" element={<DownloadApp />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Layout>

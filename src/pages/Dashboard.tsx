@@ -192,6 +192,12 @@ export default function Dashboard({ store }: Props) {
           <button className="px-4 py-2 bg-white/20 hover:bg-white/30 rounded-lg text-sm font-medium transition-colors backdrop-blur-sm">
             🧪 Test in Mock LMS
           </button>
+          <a 
+            href="#/download" 
+            className="px-4 py-2 bg-white/20 hover:bg-white/30 rounded-lg text-sm font-medium transition-colors backdrop-blur-sm inline-flex items-center gap-2"
+          >
+            💾 Download App ZIP
+          </a>
         </div>
       </div>
     </div>
