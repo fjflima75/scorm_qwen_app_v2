@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Plus, Search, BookOpen, MoreVertical, Trash2, Copy, Edit, Eye, Package, Filter } from 'lucide-react';
+import { Plus, Search, BookOpen, Trash2, Edit, Eye, Package } from 'lucide-react';
 import type { Store } from '../store';
 import type { ScormVersion, WorkflowStatus } from '../types';
 

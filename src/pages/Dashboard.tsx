@@ -1,5 +1,4 @@
-import React from 'react';
-import { BookOpen, Package, PlayCircle, Brain, TrendingUp, Clock, CheckCircle, AlertTriangle, Users, FileText } from 'lucide-react';
+import { BookOpen, Package, PlayCircle, Brain, TrendingUp, CheckCircle, AlertTriangle, Users } from 'lucide-react';
 import type { Store } from '../store';
 
 interface Props { store: Store; }

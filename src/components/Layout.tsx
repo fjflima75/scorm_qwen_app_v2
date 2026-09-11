@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import {
   LayoutDashboard, BookOpen, Package, PlayCircle, Brain, Settings,
-  LogOut, ChevronLeft, ChevronRight, Shield, FileText, Users,
-  Database, Activity, Menu, X
+  LogOut, ChevronLeft, ChevronRight, Menu, X
 } from 'lucide-react';
 import type { Store } from '../store';
 

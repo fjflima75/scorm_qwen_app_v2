@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, ArrowRight, ChevronLeft, ChevronRight, BookOpen, CheckCircle, Play, Pause, Home, Menu, X, Maximize2 } from 'lucide-react';
+import { ArrowLeft, ChevronLeft, ChevronRight, BookOpen, CheckCircle, X } from 'lucide-react';
 import type { Store } from '../store';
 import type { ContentBlock } from '../types';
 

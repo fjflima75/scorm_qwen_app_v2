@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Brain, Sparkles, MessageSquare, FileText, HelpCircle, Shield, Settings, CheckCircle, XCircle, Wifi, WifiOff, Send, Bot, User, Zap, RefreshCw } from 'lucide-react';
+import { useState } from 'react';
+import { Brain, Sparkles, Wifi, WifiOff, Send, Bot, User } from 'lucide-react';
 import type { Store } from '../store';
 
 interface Props { store: Store; }

@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import {
   ChevronRight, ChevronDown, Plus, Trash2, Edit3, Eye, Package,
-  Save, Settings, Sparkles, ArrowLeft, GripVertical, FileText,
-  Layers, BookOpen, HelpCircle, CheckCircle, Play
+  Save, Sparkles, ArrowLeft, FileText,
+  Layers, BookOpen, HelpCircle, CheckCircle
 } from 'lucide-react';
 import type { Store } from '../store';
 import type { BlockType, ContentBlock } from '../types';

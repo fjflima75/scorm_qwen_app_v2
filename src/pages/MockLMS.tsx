@@ -1,5 +1,5 @@
-import React, { useState, useRef } from 'react';
-import { Play, Square, Upload, Users, BookOpen, Activity, Terminal, Bug, CheckCircle, XCircle, Clock, AlertTriangle, Zap, RotateCcw } from 'lucide-react';
+import { useState, useRef } from 'react';
+import { Play, Users, BookOpen, Activity, Terminal, CheckCircle, Zap, RotateCcw } from 'lucide-react';
 import type { Store } from '../store';
 import type { CompletionStatus } from '../types';
 

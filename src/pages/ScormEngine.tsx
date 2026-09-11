@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Package, CheckCircle, AlertTriangle, XCircle, Download, Play, FileText, Shield, Clock, Zap } from 'lucide-react';
+import { useState } from 'react';
+import { Package, CheckCircle, Download } from 'lucide-react';
 import type { Store } from '../store';
 
 interface Props { store: Store; }

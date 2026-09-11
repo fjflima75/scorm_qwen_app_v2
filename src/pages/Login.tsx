@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Package, Lock, User, Eye, EyeOff, AlertCircle } from 'lucide-react';
 import type { Store } from '../store';
 
